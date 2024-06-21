@@ -26,7 +26,7 @@ class TodoTask extends StatelessWidget {
           Checkbox(
             value: taskCompleted,
             onChanged: onStatusChanged,
-            activeColor: Colors.green,
+            activeColor: Colors.black,
           ),
           Text(
             taskName,
