@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/utils/button.dart';
 
 class DialogPopup extends StatelessWidget {
-  final controller;
+  final TextEditingController controller;
   final VoidCallback onSave;
   final VoidCallback onCancel;
 
@@ -20,7 +20,7 @@ class DialogPopup extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
-      content: Container(
+      content: SizedBox(
         height: 120,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
